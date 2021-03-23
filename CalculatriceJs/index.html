@@ -24,11 +24,16 @@
             class="grey"
             type="button"
             value="+/-"
-            onclick="ShowValue(this)"
+            onclick="changeSigne(this)"
           />
         </div>
         <div>
-          <input class="grey" type="button" value="%" onclick="rem1(this)" />
+          <input
+            class="grey"
+            type="button"
+            value="%"
+            onclick="ShowValue(this)"
+          />
         </div>
         <div>
           <input
@@ -49,7 +54,7 @@
           <input
             class="orange"
             type="button"
-            value="×"
+            value="*"
             onclick="ShowValue(this)"
           />
         </div>
@@ -64,7 +69,7 @@
           <input
             class="orange"
             type="button"
-            value="−"
+            value="-"
             onclick="ShowValue(this)"
           />
         </div>
@@ -100,7 +105,7 @@
             class="orange"
             type="button"
             value="="
-            onclick="quickMath(this)"
+            onclick="operation(this)"
           />
         </div>
       </div>
