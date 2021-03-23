@@ -1,0 +1,51 @@
+body {
+  background: #0b0d0f;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.wrapper ul {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper li {
+  margin: 10px;
+  list-style: none;
+  font-size: 24px;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+
+.wrapper ul li a {
+  width: 60px;
+  padding: 16px 0;
+  display: block;
+  color: #fff;
+}
+
+ul li:nth-child(1) {
+  background: #3b5999;
+}
+ul li:nth-child(2) {
+  background: #55acee;
+}
+ul li:nth-child(3) {
+  background: #e4405f;
+}
+ul li:nth-child(4) {
+  background: #0077b5;
+}
+ul li:nth-child(5) {
+  background: #6441a4;
+}
+
+ul li:hover {
+  transform: translateY(-8px);
+}
