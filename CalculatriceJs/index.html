@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CalculatriceJs</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="superconteneur">
+      <div id="output">0</div>
+      <div id="conteneur">
+        <div>
+          <input class="grey" type="button" value="AC" onclick="Reset(this)" />
+        </div>
+        <div>
+          <input
+            class="grey"
+            type="button"
+            value="+/-"
+            onclick="ShowValue(this)"
+          />
+        </div>
+        <div>
+          <input class="grey" type="button" value="%" onclick="rem1(this)" />
+        </div>
+        <div>
+          <input
+            class="orange"
+            type="button"
+            value="÷"
+            onclick="ShowValue(this)"
+          />
+        </div>
+
+        <div><input type="button" value="7" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="8" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="9" onclick="ShowValue(this)" /></div>
+
+        <div>
+          <input
+            class="orange"
+            type="button"
+            value="×"
+            onclick="ShowValue(this)"
+          />
+        </div>
+
+        <div><input type="button" value="4" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="5" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="6" onclick="ShowValue(this)" /></div>
+
+        <div>
+          <input
+            class="orange"
+            type="button"
+            value="−"
+            onclick="ShowValue(this)"
+          />
+        </div>
+
+        <div><input type="button" value="1" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="2" onclick="ShowValue(this)" /></div>
+
+        <div><input type="button" value="3" onclick="ShowValue(this)" /></div>
+
+        <div>
+          <input
+            class="orange"
+            type="button"
+            value="+"
+            onclick="ShowValue(this)"
+          />
+        </div>
+
+        <div>
+          <input
+            id="double"
+            type="button"
+            value="0"
+            onclick="ShowValue(this)"
+          />
+        </div>
+
+        <div><input type="button" value="," onclick="ShowValue(this)" /></div>
+
+        <div>
+          <input
+            class="orange"
+            type="button"
+            value="="
+            onclick="quickMath(this)"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
