@@ -28,6 +28,7 @@
       </nav>
     </header>
     <div class="texte">
+      <img name="slide" />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat
         perferendis nostrum tempora inventore dolorem accusantium pariatur,
@@ -71,12 +72,28 @@
           $("nav").removeClass("scroll");
         }
       });
+
       //Pour faire dérouler le menu hamburger
       $(document).ready(function () {
         $(".hamburger").on("click", function () {
           $("nav ul").toggleClass("menu");
         });
       });
+
+      //Pour faire défiler les images
+      let i = 0;
+      let images = ["livre1.jpeg", "livre2.jpeg", "livre3.jpeg", "livre4.jpeg"];
+
+      function changeImg() {
+        document.slide.src = images[i];
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("changeImg()", 2000);
+      }
+      window.onload = changeImg;
     </script>
   </body>
 </html>
