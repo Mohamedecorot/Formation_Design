@@ -15,6 +15,7 @@
   <body>
     <header>
       <nav>
+        <div class="hamburger"><i class="fa fa-bars fa-2x"></i></div>
         <div class="logo">img</div>
         <div class="menu">
           <ul>
@@ -62,12 +63,19 @@
     </div>
 
     <script>
+      //Pour mettre du noir au menu au scroll
       $(window).on("scroll", function () {
         if ($(window).scrollTop()) {
           $("nav").addClass("scroll");
         } else {
           $("nav").removeClass("scroll");
         }
+      });
+      //Pour faire dérouler le menu hamburger
+      $(document).ready(function () {
+        $(".hamburger").on("click", function () {
+          $("nav ul").toggleClass("menu");
+        });
       });
     </script>
   </body>

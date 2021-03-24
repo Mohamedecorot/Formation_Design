@@ -18,6 +18,7 @@ nav ul {
   margin: 0;
   text-align: center;
   transition: 0.5s;
+  overflow: hidden;
 }
 nav ul li {
   display: inline-block;
@@ -45,4 +46,35 @@ nav ul li a {
 }
 nav.scroll ul {
   background-color: #000;
+}
+.hamburger {
+  display: none;
+  color: #fff;
+  background: #000;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: right;
+  padding: 15px 24px;
+}
+/* Responsive */
+@media (max-width: 580px) {
+  .hamburger {
+    display: block;
+  }
+  .logo {
+    position: fixed;
+    top: 0;
+  }
+  nav ul {
+    max-height: 0;
+    background: #000;
+  }
+  .menu {
+    max-height: 20em;
+  }
+  nav ul li {
+    width: 100%;
+    padding: 24px 0;
+  }
 }
