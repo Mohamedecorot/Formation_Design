@@ -58,12 +58,17 @@ nav.scroll ul {
   padding: 15px 24px;
 }
 img {
-  width: 600px;
-  height: 300px;
+  width: 60%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
-
+.scrollage {
+  height: 2px;
+  margin-bottom: -2px;
+  background: red;
+  width: 0%;
+}
 /* Responsive */
 @media (max-width: 580px) {
   .hamburger {

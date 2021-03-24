@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header fixé et responsive</title>
+    <title>Mon site</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -16,6 +16,7 @@
     <header>
       <nav>
         <div class="hamburger"><i class="fa fa-bars fa-2x"></i></div>
+        <div class="scrollage"></div>
         <div class="logo">img</div>
         <div class="menu">
           <ul>
@@ -29,6 +30,22 @@
     </header>
     <div class="texte">
       <img name="slide" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat
+        perferendis nostrum tempora inventore dolorem accusantium pariatur,
+        impedit quas nemo ad voluptatibus consectetur maiores cupiditate
+        praesentium minima. Et, illo illum libero aliquid, laudantium at amet
+        aliquam consequatur obcaecati eaque minus corporis ipsa. Minima non
+        officiis quas commodi eaque, quis deserunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat
+        perferendis nostrum tempora inventore dolorem accusantium pariatur,
+        impedit quas nemo ad voluptatibus consectetur maiores cupiditate
+        praesentium minima. Et, illo illum libero aliquid, laudantium at amet
+        aliquam consequatur obcaecati eaque minus corporis ipsa. Minima non
+        officiis quas commodi eaque, quis deserunt?
+      </p>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quaerat
         perferendis nostrum tempora inventore dolorem accusantium pariatur,
@@ -93,6 +110,16 @@
         }
         setTimeout("changeImg()", 2000);
       }
+
+      // Indicateur de scroll
+      $(window).scroll(function () {
+        let winTop = $(window).scrollTop(); //position actuelle
+        let docHeight = $(document).height(); //hauteur du document
+        let winHeight = $(window).height(); //hauteur de la fenêtre
+        let scrolled = (winTop / (docHeight - winHeight)) * 100;
+        $(".scrollage").css("width", scrolled + "%");
+      });
+
       window.onload = changeImg;
     </script>
   </body>
