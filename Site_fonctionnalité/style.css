@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  padding: 0%;
+  padding: 0;
+  box-sizing: border-box;
   width: 100%;
+  background: #f7f7f7;
 }
 header {
   width: 100%;
