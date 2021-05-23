@@ -1,0 +1,15 @@
+.center {
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+label {
+    margin-top: 35px;
+}
+input {
+    padding: 10px;
+    margin-bottom: 30px;
+    outline: none;
+    border: 1px solid #000;
+}
