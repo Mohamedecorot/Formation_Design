@@ -1,0 +1,61 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.accueil {
+    width: 100%;
+    height: 100%;
+    /* background: #333;
+    background: url(ressources/foretlumdown.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: #333 url(ressources/foretlumdown.jpg) center / cover no-repeat;
+}
+h1{
+    font-size: 50px;
+    padding-top: 250px;
+    padding-left: 240px;
+    color: white;
+}
+.media-container {
+    display: flex;
+    padding-left: 240px;
+    margin: 20px 0 40px 0;
+}
+.medias-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icones {
+    width: 27px;
+}
+.btn {
+    margin-left: 240px;
+    background: transparent;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 3px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+    background: #fff;
+    color: #333;
+}
