@@ -1,0 +1,34 @@
+.nope-anim {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #000;
+    margin: 100px auto 0;
+    cursor: pointer;
+}
+.nope-anim:hover {
+    animation: nope .4s forwards;
+}
+
+@keyframes nope {
+
+    0% {
+        transform: translateX(0px);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
