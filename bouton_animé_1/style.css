@@ -1,0 +1,48 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+button {
+    margin: 20px 0;
+}
+
+.btn-slide-up {
+    padding: 30px 45px;
+    font-size: 50px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #000;
+}
+.btn-slide-up span {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+.btn-slide-up::after {
+    content: "";
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-slide-up:hover::after {
+    transform: translateY(-100%);
+}
+.btn-slide-up:hover span {
+    color: #000;
+}
