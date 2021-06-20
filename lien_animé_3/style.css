@@ -1,0 +1,46 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+.two-line {
+    font-size: 50px;
+    text-decoration: none;
+    position: relative;
+    color: #222;
+}
+.two-line::before, .two-line::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background: #222;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    transition:  all 0.2s ease-in-out;
+}
+.two-line::before {
+    width: 90%;
+    bottom: 0;
+}
+.two-line::after {
+    width: 60%;
+    bottom: -7px;
+}
+.two-line:hover::before, .two-line:hover::after {
+    opacity: 1;
+    transform: translate(-50%, 0px);
+}
+.two-line::before, .two-line:hover::after {
+    transition-delay: 0.1s;
+}
+.two-line:hover::before {
+    transition-delay: 0s;
+}
