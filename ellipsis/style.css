@@ -1,0 +1,50 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    padding: 10px;
+    font-size: 35px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    resize: horizontal;
+}
+
+.container {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 340px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+html {
+    --line-h: 24px;
+    --nth-lines-trunc: 7;
+}
+
+.trunc-txt {
+    line-height: var(--line-h);
+    max-height: calc(var(--line-h) * var(--nth-lines-trunc));
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+    position: relative;
+    padding-right: 18px;
+    text-align: justify;
+}
+.trunc-txt::after {
+    content: "...";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
