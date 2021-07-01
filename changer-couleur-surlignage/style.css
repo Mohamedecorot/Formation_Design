@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, serif, sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+h2 {
+    padding: 10px 50px;
+}
+p {
+    padding: 10px 50px;
+    text-align: justify;
+}
+p::selection {
+    background: orange;
+    color: blue;
+}
+
+/* Pour tout le site
+::selection {
+    background: orange;
+} */
+h2::selection {
+    text-shadow: 1px 5px 0 lightblue;
+}
