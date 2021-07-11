@@ -1,0 +1,12 @@
+
+.arrow {
+    width: 0px;
+    height: 0px;
+    background: orange;
+    border: 1px solid #000;
+
+    border-top: 100px solid crimson;
+    border-bottom: 100px solid transparent;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+}
