@@ -1,0 +1,83 @@
+body {
+    background: #010F19;
+}
+.box {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin: 50px auto;
+}
+.faceSombre {
+    position: absolute;
+    background: rgb(78, 148, 189);
+    height: 50%;
+    bottom: 25%;
+    width: 5%;
+    left: 45%;
+}
+.faceClaireLosange {
+    position: absolute;
+    background: #89E5F6;
+    height: 50%;
+    bottom: 25%;
+    width: 5%;
+    left: 50%;
+}
+.losange {
+    position: absolute;
+    height: 40%;
+    width: 200%;
+    background: #08517a;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+    top: -20%;
+    left: -100%;
+}
+.crystalRuby {
+    position: absolute;
+    background: rgb(100,28,28);
+    height: 30%;
+    bottom: 25%;
+    width: 5%;
+    left: 40%;
+}
+.losangeRuby {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: -20%;
+    background: rgb(233,8,8);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+}
+.crystalAmeth {
+    position: absolute;
+    background: #ad70ad;
+    height: 35%;
+    bottom: 25%;
+    width: 5%;
+    right: 40%;
+}
+
+.losangeAmeth {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: -20%;
+    background: #610461;
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0% 50%);
+}
+.brillance{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    animation: brillance 1.8s ease infinite;
+}
+
+@keyframes brillance {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -20%;
+    }
+}
